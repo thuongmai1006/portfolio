@@ -1,0 +1,36 @@
+<html>
+    <head>
+      <title> Unofficial Transcript </title>
+    </head>
+
+    <body>
+      <h1> Transcript Access </h1>
+
+      <form name= "pw" id="target">
+        <label for="paswword">Password:</label>
+        <input type="password" name="password"
+               placeholder="Password" required>
+        <br>
+        <input type="submit" value="Login"  >
+
+    </form>
+
+    <script type="text/javascript">
+    document.getElementById('target').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var pass1 = "frankbutt";
+        var password = document.querySelector('[name="password"]').value;
+        if (password === pass1) {
+            alert('Correct Access. Click OK to see');
+            window.open("protectedtranscript.html", "_self");
+        } else {
+            alert('Incorrect password!');
+        }
+    });
+</script>
+
+
+    </body>
+
+
+</html>
