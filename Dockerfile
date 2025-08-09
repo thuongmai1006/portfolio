@@ -4,4 +4,4 @@ FROM php:8.1-apache
 RUN docker-php-ext-install mysqli
 
 # Then copy your site files
-COPY website/ /var/www/html/
+COPY docs/ /var/www/html/
